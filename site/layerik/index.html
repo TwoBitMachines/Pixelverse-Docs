@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Inverse Kinematics - Pixelverse</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Inverse Kinematics";
+        var mkdocs_page_input_path = "layerik.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Pixelverse
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Getting Started</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../coloreditor/">Color Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../export/">Export</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../animation/">Timeline</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Inverse Kinematics</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Pixelverse</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Inverse Kinematics</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<p>The <strong>IK Layer</strong> introduces <strong>Inverse Kinematics</strong> (IK) to pixel art—an experimental tool designed 
+to streamline posing and animation. While pixel art inherently struggles with smooth rotations, 
+this feature can still be useful for:</p>
+<blockquote>
+<ul>
+<li>
+<p><strong>Limb positioning:</strong> arms, legs, tentacles, etc.</p>
+</li>
+<li>
+<p><strong>Higher-resolution:</strong> elements with enough pixels where subtle bends are needed.</p>
+</li>
+</ul>
+</blockquote>
+<p>The IK system dynamically adjusts pixels in real time, letting you experiment with poses and 
+shapes faster, speeding up pixel art creation. While this feature isn’t ideal for every scenario 
+(due to pixel art’s rigid nature), it can be useful in some cases.</p>
+<hr />
+<p><strong>Getting Started</strong></p>
+<p>To enable <strong>Inverse Kinematics</strong>:</p>
+<blockquote>
+<ol>
+<li>
+<p><strong>Right-click</strong> the desired layer.</p>
+</li>
+<li>
+<p>Navigate to <strong>Extra &gt; Create IK</strong>.</p>
+</li>
+</ol>
+</blockquote>
+<p>To remove IK from a layer, follow the same steps.</p>
+<p><img alt="Pixel art tutorial" src="../images/CreateIK.png" /></p>
+<p>When activated, an <strong>IK</strong> icon appears on the layer and in the infobar. Click either icon to 
+enter the <strong>IK Editor</strong> (indicated by a blue screen overlay).</p>
+<p>While in the <strong>IK Editor</strong>, you must define the <strong>IK HardCopy</strong> - the pixel template that will deform during 
+posing. This works similarly to rigging bones in a mesh, establishing the base texture for all IK transformations.</p>
+<p><img alt="Pixel art tutorial" src="../images/IKEditMode.png" /></p>
+<p>If setup correctly, you'll see a nearly identical preview of this image. The system displays three white points 
+by default, representing IK joints (<strong>a minimum of two are required</strong>).</p>
+<p><strong>While in the Move Tool</strong>, hold <strong>Ctrl</strong> and click to add or remove joints (these can only be placed between 
+the first and last joint). During editing, joints can be dragged vertically (y-axis) but are locked horizontally (x-axis). 
+Once your joints are positioned, you can paint pixels onto the canvas normally like with any other layer.</p>
+<div style="background-color: #d6ecfa; padding: 8px; border-radius: 5px; border-left: 7px solid #4a90e2;">
+<b> IK joints can be repositioned at any time. </b>
+</div>
+
+<p><br></p>
+<hr />
+<p>During the IK creation process, joints must be initialized to a specific mode. <strong>White</strong> joints are uninitialized and require setup. <strong>Red</strong> joints indicate <strong>IK Mode</strong> (standard inverse kinematics behavior). <strong>Purple</strong> joints indicate <strong>Pair Mode</strong>, which always consists of exactly two joints that operate differently, allowing independent movement, rotation, and stretching within the IK system. </p>
+<p>Both <strong>IK Mode</strong> and <strong>Pair Mode</strong> can be used together in the same system. The essential rule is that each mode must contain at least two joints. While <strong>IK Mode</strong> can have more than two joints, <strong>Pair Mode</strong> must always maintain exactly two joints. <em>Neither mode can function with just a single joint.</em></p>
+<p>Every parent joint (depicted by the cross handle) must always have a child joint (depicted by the circle handle). Parent and child joints must have the same color.</p>
+<div style="background-color: #ffebee; padding: 8px; border-radius: 5px; border-left: 7px solid #e57373;"> 
+<b> Important: Users must properly configure the mode for each joint.</b>
+</div>
+<p><br></p>
+<div style="background-color: #d6ecfa; padding: 8px; border-radius: 5px; border-left: 7px solid #4a90e2;">
+<b> The "T" key is reserved in the IK Editor to quickly toggle joint modes.</b>
+</div>
+
+<p><br></p>
+<p><img alt="Pixel art tutorial" src="../images/IKMode.png" /></p>
+<p>To change mode, click on a joint and toggle the <strong>Mode</strong> button next to the main <strong>IK</strong> button in the infobar. Once your 
+template is complete, toggle the <strong>IK</strong> button again to exit the <strong>IK Editor</strong>. Be aware: You’ll often need to immediately 
+reconfigure the joints in the frame after exiting, as the frame’s IK system requires manual adjustment and operates 
+separately from the <strong>IK HardCopy</strong>.</p>
+<p>The setup process is almost complete now!</p>
+<p><img alt="Pixel art tutorial" src="../images/IKSample.gif" /></p>
+<p>The cross handle is used for moving the entire IK segment, while the round handle moves joints independently. Now you can experiment with IK formations to find which angles work best for your pixel poses. You might use only <strong>Pair Mode</strong> joints or a single <strong>IK Mode</strong> system - many configurations will be unique. Regardless of setup, all poses now maintain their formations across frames. The final critical component is the IK system's rotation algorithm, of which there are three types:</p>
+<blockquote>
+<ul>
+<li>
+<p><strong>(1) Standard Rotation</strong>: Ideal for high-resolution art but often distorts small pixel art.</p>
+</li>
+<li>
+<p><strong>(2) Line Algorithm</strong>: Can be more precise for small-scale pixel movement. Sacrifices smooth rotation and performs poorly at higher resolutions. </p>
+</li>
+<li>
+<p><strong>(3) Segmented Pixel Movement</strong>: Processes pixels in pairs, resisting local rotation while maintaining pixel integrity.</p>
+</li>
+</ul>
+</blockquote>
+<p>Each joint can use a different algorithm - you'll likely combine all three in practice. For symmetric elements (like arms), use the local pixel mirroring feature (<strong>X</strong>) to mirror pixels across their joints when necessary.</p>
+<p><img alt="Pixel art tutorial" src="../images/IKAlgo.png" /></p>
+<p>Adjust these settings via the control buttons near the main <strong>IK</strong> button.</p>
+<div style="background-color: #ffebee; padding: 8px; border-radius: 5px; border-left: 7px solid #e57373;"> 
+<b> Any modification to an IK joint triggers a complete cel reset - all pixels are erased in the cel before the system recreates the pose. Be aware: Any manual pixel edits on this layer will be lost whenever you adjust the IK pose.</b>
+</div>
+<p><br></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../animation/" class="btn btn-neutral float-left" title="Timeline"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../animation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

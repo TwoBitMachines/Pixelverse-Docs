@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Color Editor - Pixelverse</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Color Editor";
+        var mkdocs_page_input_path = "coloreditor.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Pixelverse
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Getting Started</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Color Editor</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#color-editor">Color Editor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#color-palettes">Color Palettes</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../export/">Export</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../animation/">Timeline</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../layerik/">Inverse Kinematics</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Pixelverse</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Color Editor</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<h2 id="color-editor">Color Editor</h2>
+<p>Adjust colors with three modes (uses <em>Color32</em>, 8-bit color + alpha).</p>
+<blockquote>
+<ul>
+<li>
+<p><strong>RGB:</strong> Set red, green, and blue levels (0–255).</p>
+</li>
+<li>
+<p><strong>HSV:</strong> Pick a hue, then adjust saturation and brightness.</p>
+</li>
+<li>
+<p><strong>HSL:</strong> Pick a hue, then adjust saturation and lightness.</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>Shadows Menu</strong></p>
+<p><img alt="Pixel art tutorial" src="../images/ShadowsMenu.png" /></p>
+<p>This generates three sections of color variations for the selected color.</p>
+<blockquote>
+<ul>
+<li>
+<p><strong>First row:</strong> creates shadows and highlights</p>
+</li>
+<li>
+<p><strong>Second row:</strong> generates hue-shifted shadows and highlights</p>
+</li>
+<li>
+<p><strong>Third row:</strong> produces complementary colors</p>
+</li>
+</ul>
+</blockquote>
+<p>Press the center button to regenerate colors, and or enable <strong>Reset Shadows On Eyedropper</strong> in <strong>Preferences &gt; General</strong>.</p>
+<p><br></p>
+<h2 id="color-palettes">Color Palettes</h2>
+<p><img alt="Pixel art tutorial" src="../images/ColorPalette.png" /></p>
+<p>The color palette stores a set of limited colors, ensuring visual consistency
+and quick color swapping while painting. Editing a palette color updates it globally across your 
+artwork (requires the <strong>Paint Bucket</strong> tool). <strong>Modifying a palette color is not supported by the 
+undo system.</strong></p>
+<div style="background-color: #d6ecfa; padding: 8px; border-radius: 5px; border-left: 7px solid #4a90e2;">
+<b> Note: Only custom palettes can be edited. To modify a preset palette, create a copy first.</b>
+</div>
+<p><br></p>
+<p><strong>Pixelverse</strong> includes predefined color palettes for quick selection. These preset palettes cannot be modified 
+- you cannot add or change colors. However, you can still reorganize them by sorting colors based on 
+saturation, brightness, etc. If you do sort the preset palettes, you can always restore the original 
+palette order in the drop down menu.</p>
+<p><strong>In the drop down menu, to enable editing capabilities:</strong></p>
+<ol>
+<li>
+<p>Create a new empty palette, or</p>
+</li>
+<li>
+<p>Make a copy of an existing preset palette</p>
+</li>
+<li>
+<p>Select edit </p>
+</li>
+</ol>
+<p><img alt="Pixel art tutorial" src="../images/ColorPaletteCopy.png" /></p>
+<p>While in edit mode, you can add or delete colors, rename the palette, or import colors from current 
+layers using the new dropdown menu option. Remember to exit edit mode when not in use since the <strong>Paint Bucket</strong> 
+tool can accidentally modify colors while active. </p>
+<p><strong>Tip:</strong></p>
+<p>The slider adjusts the color palette's display size.</p>
+<p><br><br></p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../tools/" class="btn btn-neutral float-left" title="Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../tools/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

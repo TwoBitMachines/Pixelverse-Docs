@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tools - Pixelverse</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tools";
+        var mkdocs_page_input_path = "tools.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Pixelverse
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Getting Started</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Tools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#select-move">Select, Move</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pencil">Pencil</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#erase">Erase</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shapes">Shapes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paint-bucket">Paint Bucket</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#marquee-select">Marquee Select</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flip">Flip</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#center-pixels">Center Pixels</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rotate">Rotate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#symmetry">Symmetry</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#onion">Onion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../coloreditor/">Color Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../export/">Export</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../animation/">Timeline</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../layerik/">Inverse Kinematics</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Pixelverse</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<h2 id="select-move">Select, Move</h2>
+<p>To modify your pixel content, first select a layer by left-clicking inside its content boundary. Once selected, 
+you can drag anywhere to reposition the layer content. The drag operation will also apply to any child 
+layers of the parent layer.</p>
+<div style="background-color: #d6ecfa; padding: 8px; border-radius: 5px; border-left: 7px solid #4a90e2;">
+<b> This action is hardcoded to the right-click, making it convenient, especially when using the Pencil tool.</b>
+</div>
+
+<p><br>
+<strong>Tips</strong></p>
+<ul>
+<li>Hold <strong>Shift</strong> while dragging to move all layers at once for bulk adjustments.</li>
+<li>Hold <strong>Alt</strong> while dragging to wrap pixels that cross over the canvas boundary.</li>
+</ul>
+<p><strong>Quick Move</strong></p>
+<p>Use screen handles (<strong>blue cross</strong>) to move layers efficiently without switching from the 
+current layer. When a layer is selected, it is highlighted in <strong>yellow</strong> for clarity. <strong>Quick Move</strong> remains 
+available in <strong>Pencil</strong> mode, and it can be enabled in <strong>Preferences &gt; General</strong>.</p>
+<p><img alt="Pixel art tutorial" src="../images/SelectMove.gif" /></p>
+<p><br><br></p>
+<hr />
+<h2 id="pencil">Pencil</h2>
+<p>The primary tool for painting pixels directly onto the current layer. Use left-click to paint, with
+three brush modes: <strong>Circle</strong>, <strong>Rectangle</strong>, and <strong>Line</strong>. Brush thickness is adjustable 
+from <strong>1 to 32 pixels</strong>. When active, the <strong>Tool Infobar</strong> displays brush selection and size controls.</p>
+<p>This tool also includes several efficiency-focused features that make quick edits smoother, reducing 
+the need for frequent tool switching.</p>
+<p><strong>Move A Group Of Pixels</strong></p>
+<ol>
+<li>Hold <strong>Shift</strong> + left-click and <strong>drag</strong> to select an area. </li>
+<li>Release mouse to confirm selection.</li>
+<li>Left-click elsewhere to reposition the pixels.</li>
+</ol>
+<p><img alt="Pixel art tutorial" src="../images/PixelQuickSelect.gif" /></p>
+<p><strong>Move Single Pixel</strong></p>
+<ol>
+<li>Hold <strong>Shift</strong> + left-click on a single pixel.</li>
+<li>Left-click elsewhere to reposition the pixel.</li>
+</ol>
+<p><img alt="Pixel art tutorial" src="../images/PixelQuickMove.gif" /></p>
+<p><strong>Contour</strong></p>
+<ol>
+<li>Hold <strong>Ctrl</strong> while drawing your shape.</li>
+<li>Release mouse to automatically fill the interior.</li>
+</ol>
+<p><img alt="Pixel art tutorial" src="../images/Contour.gif" /></p>
+<p><strong>Mask</strong></p>
+<ol>
+<li>Hold <strong>Alt</strong> while painting to only affect areas with existing pixels.</li>
+</ol>
+<p><img alt="Pixel art tutorial" src="../images/Mask.gif" /></p>
+<p><strong>Shortcuts Workflow</strong></p>
+<p>The <strong>Pencil</strong> is designed to minimize tool switching through shortcuts. Please visit 
+the <strong>Shortcuts</strong> section to view the key mappings.</p>
+<ul>
+<li><strong>Quick Delete:</strong> shortcut to instantly erase a pixel.</li>
+<li><strong>Eyedropper:</strong> shortcut to quickly sample any color from the canvas.</li>
+<li><strong>Frame Navigation:</strong> shortcuts to switch between previous and next frames.</li>
+<li><strong>Layer Movement:</strong> right-click to select and move layers. </li>
+</ul>
+<p><br><br></p>
+<hr />
+<h2 id="erase">Erase</h2>
+<p>Left-click to remove pixels from the current layer. Current brush thickness is applied. </p>
+<p><br><br></p>
+<hr />
+<h2 id="shapes">Shapes</h2>
+<p>Create standard shapes including <strong>Lines</strong>, <strong>Rectangles</strong>, and <strong>Circles</strong> in various sizes.
+Left-click and <strong>drag</strong> to generate a new shape. Current brush thickness is applied.</p>
+<p><strong>Tip:</strong></p>
+<ul>
+<li>Hold <strong>Shift</strong> while dragging to produce outline-only shapes.</li>
+<li>Hold <strong>Alt</strong> while dragging to wrap pixels that cross over the canvas boundary.</li>
+</ul>
+<p><img alt="Pixel art tutorial" src="../images/Shapes.gif" /></p>
+<p><br><br></p>
+<hr />
+<h2 id="paint-bucket">Paint Bucket</h2>
+<p>Fills enclosed areas on the current layer with your selected color.</p>
+<p><strong>Tips</strong></p>
+<ul>
+<li>Hold <strong>Shift</strong> to replace a color across all layer.</li>
+<li>Hold <strong>Control</strong> to replace a color across all layers.</li>
+<li>Hold <strong>Alt</strong> to replace a color across all frames.</li>
+<li>When editing a color palette, using <strong>Paint Bucket</strong> on a palette color updates all instances of that color across the entire file (all layers and frames).</li>
+</ul>
+<div style="background-color: #ffebee; padding: 8px; border-radius: 5px; border-left: 7px solid #e57373;"> 
+<b> Note: preset color palettes cannot be modified. </b>
+</div>
+
+<p><br><br></p>
+<h2 id="marquee-select">Marquee Select</h2>
+<hr />
+<p>Select and transform pixel areas using <strong>move</strong>, <strong>stretch</strong>, <strong>rotate</strong>, or <strong>delete</strong> actions on the current layer. 
+Press the shortcut key to cycle through all selection modes.</p>
+<p><strong>Rectangle</strong>  </p>
+<ol>
+<li>Drag to select a rectangular area. Or double-click to quick select the entire layer. </li>
+<li>Release mouse to complete. </li>
+</ol>
+<p><strong>Circle</strong>  </p>
+<ol>
+<li>Drag to select a circular area. </li>
+<li>Release mouse to complete.  </li>
+</ol>
+<p><strong>Lasso</strong> </p>
+<ol>
+<li>Freely draw around pixels to select. </li>
+<li>Release mouse to complete.  </li>
+</ol>
+<p><strong>Polygon</strong> </p>
+<ol>
+<li>Click to place vertices.  </li>
+<li>Close the shape to complete.  </li>
+</ol>
+<p><strong>Magic Wand</strong>  </p>
+<ol>
+<li>Hold <strong>Shift</strong> to select all connected pixels of the same color.</li>
+<li>Select indefinitely.</li>
+<li>Release <strong>Shift</strong> to complete.</li>
+</ol>
+<p><strong>When Selection Is Complete</strong> </p>
+<ol>
+<li>Transform selection (<strong>move</strong>, <strong>stretch</strong>, <strong>rotate</strong>).  </li>
+<li><strong>Ctrl+V</strong> to paste if necessary.</li>
+<li>
+<p>Finalize:  </p>
+<blockquote>
+<ul>
+<li>Left-click outside selection area to apply.  </li>
+<li>Press <strong>Delete</strong> to remove.  </li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>Or right-click selection to open context menu.  </p>
+</li>
+<li>Finalize:  <blockquote>
+<ul>
+<li>Send selected area to new <strong>Layer</strong>.</li>
+<li>Send selected area to new <strong>Pixelfile</strong> ("New File Cropped").</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p><strong>Transform Controls</strong></p>
+<ul>
+<li><strong>Move:</strong> left-click + drag inside the selection.</li>
+<li><strong>Stretch:</strong> drag edge handles.</li>
+<li><strong>Rotate:</strong> rotate green handle (circles around pivot).</li>
+<li><strong>Pivot:</strong> left-click + drag to reposition.</li>
+</ul>
+<div style="background-color: #ffebee; padding: 8px; border-radius: 5px; border-left: 7px solid #e57373;"> 
+<b> Note: Transform controls does not work with undo. </b>
+</div>
+<p><br></p>
+<p><strong>Tip:</strong> </p>
+<p>Selected pixels can be rotated and flipped mid-transform using the <strong>Rotate</strong> and <strong>Flip</strong> tools.</p>
+<p><img alt="Pixel art tutorial" src="../images/MarqueeSelect.gif" /></p>
+<p><br><br></p>
+<hr />
+<h2 id="flip">Flip</h2>
+<p>Flip pixels in the current layer within the content boundary. This will affect child layers.</p>
+<ul>
+<li><strong>Horizontal Flip:</strong> mirror across vertical boundary axis.</li>
+<li><strong>Vertical Flip:</strong> mirror across horizontal boundary axis.</li>
+<li><strong>Canvas Flip:</strong> mirror all layers across canvas y-axis.</li>
+</ul>
+<div style="background-color: #d6ecfa; padding: 8px; border-radius: 5px; border-left: 7px solid #4a90e2;">
+<b> Flip operations also affect IK hard-copies. </b>
+</div>
+
+<p><br><br></p>
+<hr />
+<h2 id="center-pixels">Center Pixels</h2>
+<p>Instantly center layer contents within the canvas center. This will affect child layers.</p>
+<ul>
+<li><strong>Full Center:</strong> align to both horizontal and vertical axes (default).</li>
+<li><strong>Axis-Specific:</strong> center only horizontally or vertically.</li>
+</ul>
+<p><br><br></p>
+<hr />
+<h2 id="rotate">Rotate</h2>
+<p>Rotate the layer by 90 degrees counter-clockwise. This will affect child layers.</p>
+<p><br><br></p>
+<hr />
+<h2 id="symmetry">Symmetry</h2>
+<p>Mirror painting in real-time.  </p>
+<ul>
+<li><strong>Horizontal:</strong> left/right mirroring.  </li>
+<li><strong>Vertical:</strong> up/down mirroring. </li>
+<li><strong>Diagonal:</strong> x/y cross mirroring.  </li>
+</ul>
+<p><strong>Tip:</strong></p>
+<p>For horizontal/vertical axes, drag on-screen handles to offset center points.</p>
+<p><br><br></p>
+<hr />
+<h2 id="onion">Onion</h2>
+<p>Preview adjacent animation frames as semi-transparent overlays.</p>
+<ul>
+<li>Drag the <strong>onion slider</strong> to adjust opacity (lowest value disables skins).</li>
+<li><strong>While hovering</strong> the slider:<blockquote>
+<ul>
+<li>Toggle next/previous onion visibility  </li>
+<li>Enable red/blue tinting for skins</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../coloreditor/" class="btn btn-neutral float-right" title="Color Editor">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../coloreditor/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
