@@ -1,0 +1,13 @@
+site_name: Pixelverse
+
+nav:
+  - Getting Started: index.md
+  - Tools: tools.md
+  - Color Editor: coloreditor.md
+  - Preferences: preferences.md
+  - Shortcuts: shortcuts.md
+  - Export: export.md
+  - Timeline:  animation.md
+  - Inverse Kinematics: layerik.md
+
+theme: readthedocs
