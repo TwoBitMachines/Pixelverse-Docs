@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Shortcuts - Pixelverse</title>
+    <title>Outline - Pixelverse</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Shortcuts";
-        var mkdocs_page_input_path = "shortcuts.md";
+        var mkdocs_page_name = "Outline";
+        var mkdocs_page_input_path = "outline.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -55,10 +55,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Shortcuts</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
                 </li>
               </ul>
               <ul>
@@ -71,6 +69,12 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../layerik/">Inverse Kinematics</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Outline</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
       </div>
@@ -87,7 +91,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Shortcuts</li>
+      <li class="breadcrumb-item active">Outline</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -97,16 +101,61 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="_1"></h1>
-<p>A list of all available shortcuts in <strong>Pixelverse</strong>. Note that tools with multiple options 
-(like <strong>Shapes</strong> or <strong>Marquee</strong>) use the same shortcut key to cycle through their modes. Also, be 
-aware of the hardcoded shortcuts listed at the bottom.</p>
-<p><img alt="Pixel art tutorial" src="../images/Shortcuts.png" /></p>
+<p>Generates borders for all layers in the current frame. Each layer can disable outlines via the 
+Extra Menu. Warning: Like IK Layers, all pixels on this layer will be reset when updated.</p>
+<p><strong>How to enable:</strong></p>
+<ol>
+<li><strong>Right-click</strong> the desired layer</li>
+<li>Select <strong>Extra &gt; Create Outline</strong></li>
+<li>Enable auto-generation in <strong>Preferences</strong> if needed</li>
+</ol>
+<p><img alt="Creating an outline" src="../images/CreateOutline.png" /></p>
+<ul>
+<li>To remove, follow the same steps.</li>
+</ul>
+<p><strong>Modifying Outlines</strong></p>
+<p><img alt="Extra Menu location" src="../images/OpenExtraMenu.png" /></p>
+<p>Access outline controls through the <strong>Extra Menu</strong> (located on the far right of the Timeline window):</p>
+<p><img alt="Outline settings" src="../images/Outline.png" /></p>
+<p>Adjust these settings or click <strong>Refresh All Frames</strong> to update:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color</strong></td>
+<td>Outline color</td>
+</tr>
+<tr>
+<td><strong>Thickness</strong></td>
+<td>Outline width in pixels</td>
+</tr>
+<tr>
+<td><strong>Offset</strong></td>
+<td>Positions outline inside pixels</td>
+</tr>
+<tr>
+<td><strong>Roundness</strong></td>
+<td>Controls corner sharpness</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Select which sides (N/S/E/W) get outlines</li>
+</ul>
+<p><strong>Tips</strong></p>
+<ul>
+<li>Outline layers are still controlled by the hierarchy order - rearrange to control layer overlap.</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../preferences/" class="btn btn-neutral float-left" title="Preferences"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../export/" class="btn btn-neutral float-right" title="Export">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../layerik/" class="btn btn-neutral float-left" title="Inverse Kinematics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -129,10 +178,8 @@ aware of the hardcoded shortcuts listed at the bottom.</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../preferences/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../layerik/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../export/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

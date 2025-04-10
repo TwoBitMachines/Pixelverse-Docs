@@ -18,7 +18,6 @@ shapes faster, speeding up pixel art creation. While this feature isn’t ideal 
 To enable **Inverse Kinematics**:
 
 > 1. **Right-click** the desired layer.
-
 > 2. Navigate to **Extra > Create IK**.
 
 To remove IK from a layer, follow the same steps.

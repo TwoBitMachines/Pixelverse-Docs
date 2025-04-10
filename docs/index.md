@@ -64,7 +64,7 @@ saving.
 ---
 ## Getting Started
 
-Inside Unity, go to **Window > Pixelverse** to open the editor window.
+In Unity go to **Window > Pixelverse** to open the editor window.
 
 ![Pixel art tutorial](./images/CreateFile.png)
 
