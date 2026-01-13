@@ -41,7 +41,6 @@ Press **Crop** to apply.
 | :--------------| :-----------------------------------------------------------|
 | **Rename File**             | Renames current file (press button to confirm) |
 | **Reset Shadows On Eyedrop**| Auto-generates color shadows when using eyedrop|
-| **Fixed Guidelines**        | Shows permanent canvas guides (basic)          |
 | **Quick Move**              | Quickly move layers without pre-selection      |
 
 <br><br>

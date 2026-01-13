@@ -7,7 +7,6 @@ Extra Menu. Warning: Like IK Layers, all pixels on this layer will be reset when
 
 1. **Right-click** the desired layer
 2. Select **Extra > Create Outline**
-3. Enable auto-generation in **Preferences** if needed
 
 ![Creating an outline](./images/CreateOutline.png)
 

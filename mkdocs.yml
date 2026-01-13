@@ -10,5 +10,6 @@ nav:
   - Timeline:  animation.md
   - Inverse Kinematics: layerik.md
   - Outline: outline.md
+  - TileSet: tileset.md
 
 theme: readthedocs

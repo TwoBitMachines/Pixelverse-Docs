@@ -22,8 +22,6 @@ This generates three sections of color variations for the selected color.
 
 > - **Third row:** produces complementary colors
 
-Press the center button to regenerate colors, and or enable **Reset Shadows On Eyedropper** in **Preferences > General**.
-
 <br>
 
 ## Color Palettes

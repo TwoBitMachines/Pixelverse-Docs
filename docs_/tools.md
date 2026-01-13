@@ -111,7 +111,12 @@ Fills enclosed areas on the current layer with your selected color.
 - Hold **Shift** to replace a color across all layer.
 - Hold **Control** to replace a color across all layers.
 - Hold **Alt** to replace a color across all frames.
+- Hold **Control****Alt** to replace a color across entire file.
+- **Percent Tolerance**: how similar a color must be to get filled.
 - When editing a color palette, using **Paint Bucket** on a palette color updates all instances of that color across the entire file (all layers and frames).
+
+**Gradient**
+Fills an area with a smooth transition between two colors. The active color defines the base color, while the gradient color field defines the target color to blend toward. The transition can be linear or radial, and optional Bayer matrix dithering and noise can be applied.
 
 <div style="background-color: #ffebee; padding: 8px; border-radius: 5px; border-left: 7px solid #e57373;"> 
 <b> Note: preset color palettes cannot be modified. </b>
