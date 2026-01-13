@@ -10,7 +10,7 @@ Using a layer, create a tileset that can be used to paint tiles on other layers.
 Layers marked as TileSet must be positioned at the top of the layer stack since they render independently to prevent overlap. 
 Tiles should only be created in the first frame.
 
-![Creating an outline](./images/TileSetCreate.png)
+![Creating an TileSet](./images/TileSetCreate.png)
 
 - To remove, follow the same steps.
 
